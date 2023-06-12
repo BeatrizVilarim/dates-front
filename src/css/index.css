@@ -2,6 +2,7 @@ body {
     background-image: url(../../Mesh\ Gradient.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 
 }
 
@@ -9,6 +10,9 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    width: 200px;
+    height: 100px;
+    margin-left: 70;
 }
 
 /* .botao-inve{
@@ -27,7 +31,22 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+    margin-top: 30px; 
+    margin-right: 70px;
 }
+
+.botoes-cabecalho button:first-child {
+    margin-right: 13px; 
+  }
+  
+  .botoes-cabecalho button:nth-child(2) {
+    /* outras propriedades */
+    margin-left: 13px; /* Ajuste a margem esquerda conforme necessário */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 15px;
+  }
   
 .cadastro {
     display: flex;
@@ -45,8 +64,10 @@ body {
     border-radius: 15px;
     padding: 20px;
     width: 50%;
-      
-
+    overflow: auto; /*ou scroll, dependendo do efeito desejado */ 
+    height: 200px; /* defina a altura desejada para permitir a rolagem */
+    margin-top: 300px; /* Ajuste a margem superior conforme necessário */  
+    margin-left: 50px;
     .btn-primary{
         background-color: #FD6121;
         border-color: #FD6121;
@@ -62,6 +83,7 @@ body {
         flex: none;
         order: 1;
         flex-grow: 0;
+        margin-right: 500px;
 
     }
   }
@@ -75,19 +97,21 @@ body {
   
 .formulario-cadastro input {
     width: 100%;
-    margin-bottom: 40px;
-    border-color: rgb(142, 142, 142);
+    margin-bottom: 20px;
+    border-color: gray;
     border-radius: 5px;
+    height: 50px; /* Ajuste a altura desejada */
     
 }
 
+/*Estilo dos botões de input do formulário de cadastro */
 .formulario-cadastro a {
     color: black ;
     align-self: flex-start;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 550;
+    font-size: 15px;
 }
 
 .b
@@ -125,8 +149,215 @@ body {
 }
 
 
-  
-  
+/*Estilo do botão de dropdown do formulário de cadastro*/
+.btn-outline-dark{
+    width: 800px;
+    display: flex;
+    margin-top: 10px;
+    margin-right: 400px;
+    
+}
+
+/*Estilo do botão de submeter "Registrar"*/
+.btn-register{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 500px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+}
+
+footer {
+    position:absolute;
+    bottom: -500px;
+    background-color:black;
+    color: #FFF;
+    width: 100%;
+    height: 400px;    
+    text-align: center;
+    line-height: 100px;
+    top: 950px;
+
+    .img-left{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100px;
+        margin-left: 60px;
+    }
+
+    .dates-rights{
+        margin-top: 180px;
+        font-size: 20px;
+    }
+
+    
+    .button-sobrenos{
+        border: none;
+        background-color: transparent;
+        color:white;
+        text-decoration: underline;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 10px; 
+        margin-right: 900px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        font-weight: 550;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      .button-conhecacesar{
+        border: none;
+        background-color: transparent;
+        color:white;
+        text-decoration: underline;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 70px; 
+        margin-right: 850px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        text-decoration: none;
+      }
+
+      .button-contato{
+        border: none;
+        background-color: transparent;
+        color:white;
+        text-decoration: underline;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 110px; 
+        margin-right: 852px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        text-decoration: none;
+      }
+
+      .button-informacoes{
+        border: none;
+        background-color: transparent;
+        color:white;
+        text-decoration: underline;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 10px; 
+        margin-right: 600px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        font-weight: 550;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      .button-startups{
+        border: none;
+        background-color: transparent;
+        color:white;
+        text-decoration: underline;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 70px; 
+        margin-right: 610px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        text-decoration: none;
+      }
+
+      .button-investidores{
+        border: none;
+        background-color: transparent;
+        color:white;
+        text-decoration: underline;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 110px; 
+        margin-right: 462px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        text-decoration: none;
+      }
+
+      .button-privacidade{
+        border: none;
+        background-color: transparent;
+        color:white;
+        text-decoration: underline;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 150px; 
+        margin-right: 534px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        text-decoration: none;
+      }
+
+      .btn-primary{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left: 1200px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        background-color: #FD6121;
+        border-color: black;
+        position: relative;
+        top: -270px; 
+        width: 150px; /* Ajuste esse valor para controlar a largura do botão */
+        height: 50px; /* Ajuste esse valor para controlar a altura do botão */
+        font-weight: 600;
+    }
+
+    .btn-light{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 150px;
+        margin-right: 85px;
+        margin-left: 13px; /* Ajuste a margem esquerda conforme necessário */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        font-weight: 550;
+        font-size: 15px;
+        width: 150px; /* Ajuste esse valor para controlar a largura do botão */
+        height: 50px; /* Ajuste esse valor para controlar a altura do botão */
+    }
+
+
+
+
+
+}
+
+
 
 
 

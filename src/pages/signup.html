@@ -6,47 +6,74 @@
     <nav>
     </nav>
 
+
     <form class="botoes-cabecalho">
       <button type="button" class="btn btn-outline-light">Investidores</button>
-      <button type="button" class="btn btn-light">Fazer Login</button>
+      <button type="button" class="btn btn-light">Fazer Login ></button>
     </form>
 
     <form class="formulario-cadastro">
       <h2>Realizar o pré cadastro da sua startup</h2>
       <h3>Tenha os dados da sua startup no maior data analytics do escossistema de empreendedorismo do Brasil e receba oportunidades de negócio personalizadas.</h3>
-      <a>Meu nome é</a><input type="text" name="Meu-nome" placeholder="Informe seu nome" />
-      <a>Meu e-mail é</a><input type="text" name="email" placeholder="Indique seu e-mail" />
-      <a>Eu represento a startup</a><input type="text" name="nome-startup" placeholder="Informe o nome de sua startup" />
-      <a>Senha</a><input type="password" name="senha" placeholder="Escolha sua senha" />
-      <a>Confirmar senha</a><input type="password" name="confirma-senha" placeholder="Digite a senha escolhida novamente" />
-      <a>O da.tes pode nos ajudar com </a>
-
-      <div class="btn-group">
-        <button type="button" class="btn btn-danger dropdown-toggle btn-outline-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Ação
+      <a>Meu nome é *</a><input type="text" name="Meu-nome" placeholder="Informe seu nome" />
+      <a>Meu e-mail é *</a><input type="text" name="email" placeholder="Indique seu e-mail" />
+      <a>Eu represento a startup *</a><input type="text" name="nome-startup" placeholder="Informe o nome de sua startup" />
+      <a>Senha *</a><input type="password" name="senha" placeholder="Escolha sua senha" />
+      <a>Confirmar senha *</a><input type="password" name="confirma-senha" placeholder="Digite a senha escolhida novamente" />
+      <a>O da.tes pode nos ajudar com *</a>
+      <div class="dropdown">
+        <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Selecione uma opção
         </button>
-        <div class="dropdown-menu p-4 text-muted" style="max-width: 200px;">
-          <p>
-            Algum exemplo de texto, aqui dentro do menu.
-          </p>
-          <p class="mb-0">
-            Mais um exemplo de texto.
-          </p>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Opção 1</a>
+          <a class="dropdown-item" href="#">Opção 2</a>
+          <a class="dropdown-item" href="#">Opção 3</a>
         </div>
+      </div>
 
-      <input class="btn btn-primary" type="submit" value="Registrar">
+      <div class="btn-group btn-register btn-custom">
+        <input class="btn btn-primary" type="submit" value="Registrar">
+      </div>
     </form>
+      
 
-
+  
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   </head>
   <body>
+
+    <footer>
+
+      <link rel="stylesheet" href="../css/index.css">
+      <h1><img class="img-left" src="../../nav bar.png"></h1>
+      <nav>
+      </nav>
+      <div class="dates-rights" style="margin-left: -1080px;"><a>© 2023 da.tes | All rights reserved.</a></div>
+
+      <button class="button-sobrenos">Sobre nós </button>
+      <button class="button-conhecacesar">Conheça o CESAR </button>
+      <button class="button-contato">Entre em contato</button>
+      <button class="button-informacoes">Informações</button>
+      <button class="button-startups">Para startups</button>
+      <button class="button-investidores">Para investidores e corporações</button>
+      <button class="button-privacidade">Politica de privacidade</button>
+      <div class="btn-group btn-cadastro btn-custom">
+        <input class="btn btn-primary" type="submit" value="Fazer cadastro"></div>
+      <button type="button" class="btn btn-light">Acessar conta</button>
+      </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+
+    
 
   
 </body>
