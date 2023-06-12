@@ -1,0 +1,132 @@
+body {
+    background-image: url(../../Mesh\ Gradient.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.img-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* .botao-inve{
+    position: right;
+    top: 0;
+    left: 0;
+} */
+.cadastro{
+    position:absolute; 
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.botoes-cabecalho{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+  
+.cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.formulario-cadastro {
+    display: inline-table;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 50%;
+      
+
+    .btn-primary{
+        background-color: #FD6121;
+        border-color: #FD6121;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 58px;
+        gap: 4px;
+        width: 191px;
+        height: 54px;
+        border-radius: 8px;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+    }
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+.formulario-cadastro input {
+    width: 100%;
+    margin-bottom: 40px;
+    border-color: rgb(142, 142, 142);
+    border-radius: 5px;
+    
+}
+
+.formulario-cadastro a {
+    color: black ;
+    align-self: flex-start;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.b
+
+.btn-danger{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px
+
+}
+
+.formulario-cadastro h2{
+    color: #FD6121;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 120%;
+    align-self: flex-start;
+
+}
+
+.formulario-cadastro h3{
+    color: rgb(36, 33, 33);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 120%;
+    align-self: flex-start;
+
+}
+
+
+  
+  
+
+
+
