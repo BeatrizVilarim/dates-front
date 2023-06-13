@@ -35,7 +35,54 @@ function getCountries(){
     });
 }
 
+function getEditais(){
+    return new Promise((resolve, reject) => {
+        fetch('http://localhost:8000/api/editais')
+        .then(response => response.json())
+        .then(json => {
+            console.log(json.data)
+            resolve(json.data)
+        })
+        .catch(error => {
+            reject(error);
+        });
+    });
+}
 
+// getEditais();
+
+function applyEditais(){
+    let allEditais = "";
+    var controlI = 0;
+    getEditais()
+    .then(editais => {
+        editais.forEach(edital => {
+            allEditais += `<div class="col-sm-6 mb-3 mb-sm-0 mt-2">
+                            <div class="card">
+                            <div class="card-body">
+                                <img src="../../edital.jpg" class="card-img-top" alt="...">
+                                <h5 class="card-title">${edital.nome_edital}</h5>
+                                <p class="card-text">
+                                - <b>Localidade</b>: ${edital.cidade} - ${edital.estado}<br>
+                                - <b>Data de Inscrição</b>: ${edital.data_insc_inicial} até ${edital.data_insc_final}<br>
+                                - <b>Segmento:</b> ${edital.segmento}<br>
+                                - <b>Objetivo resumido </b>: ${edital.objetivo_curto}
+                                </p>
+                                <a href="#" class="btn btn-primary">Quero ver este!</a>
+                            </div>
+                            </div>
+                        </div>`
+        });
+        document.querySelector('#edital-container').innerHTML = allEditais;
+    })
+    .catch(error => {
+        allEditais = '<h1>Não conseguimos listar todos editais</h1>';
+        document.querySelector('#edital-container').innerHTML = allEditais;
+    })
+
+    console.log(allEditais)
+    
+}
 
 
 
