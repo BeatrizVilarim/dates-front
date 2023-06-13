@@ -49,7 +49,7 @@ function getEditais(){
     });
 }
 
-// getEditais();
+getEditais();
 
 function applyEditais(){
     let allEditais = "";
@@ -61,7 +61,7 @@ function applyEditais(){
                             <div class="card">
                             <div class="card-body">
                                 <img src="../../edital.jpg" class="card-img-top" alt="...">
-                                <h5 class="card-title">${edital.nome_edital}</h5>
+                                <h5 class="card-title fw-bolder">${edital.nome_edital}</h5>
                                 <p class="card-text">
                                 - <b>Localidade</b>: ${edital.cidade} - ${edital.estado}<br>
                                 - <b>Data de Inscrição</b>: ${edital.data_insc_inicial} até ${edital.data_insc_final}<br>
